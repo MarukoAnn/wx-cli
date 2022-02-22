@@ -1,0 +1,24 @@
+{
+  "name": "wx-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "wx-cli": "./src/index.js", 
+    "wx": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "3.0.0",
+    "commander": "^9.0.0",
+    "execa": "5.0.0",
+    "inquirer": "^8.2.0",
+    "ora": "5.2.0",
+    "wx-cli": "^1.0.0"
+  }
+}
