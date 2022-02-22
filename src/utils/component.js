@@ -6,7 +6,6 @@ let dir_path = common.dir_path;
 const list = common.list;
 const component = async (data) => {
     const {name, dir} = data;
-    console.log('data', data);
      // 设置文件路径
      const file_path = path.join(dir_path, `${dir}/${name}`);
      let file_list = `${dir}/${name}`.split('/');
@@ -43,11 +42,9 @@ const readFile = () => {
             if(err){
                 reject(err);
             }
-            // console.log('data', data.toString());
             resolve(data.toString());
         })
     })
-    // return '123';
 }
 
 module.exports = component

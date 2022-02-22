@@ -28,18 +28,6 @@ program.command('init <name> [branch]')
            })
        }) // 初始命令
 
-// 定义命令
-program.option(
-    '-s, --source',
-    'this is a source',
-    (v, n) => {
-      // 这里的v 就是传入的命令行参数
-      // n 就是第四个参数
-      console.log(v + '-source' + n);
-      
-      return v + '-source' + n;
-    },
-  );
 program.option('-p, --page  <name...>', 'create a Page for your project')
         .option('-c, --component <name...>', 'create a Component for your project')
         .action((name) => {
@@ -51,15 +39,6 @@ program.option('-p, --page  <name...>', 'create a Page for your project')
             }
         })
 program.parse(process.argv);
-
-// program.action((name, branch) => {
-//     console.log('name', name);
-//     console.log('branch', branch);
-// })
-// function page(...args) {
-//     console.log('args', args);
-//     return;
-// }
 
 
 

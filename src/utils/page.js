@@ -49,16 +49,13 @@ const readFile = () => {
                 console.log(err);
                 reject(err);
             }
-            // console.log('data', data.toString());
             resolve(data.toString());
         })
     })
-    // return '123';
 }
 
 // 读取路由文件
 const readRouterFile = (path, name, file_path) => {
-    // console.log('path', path);
     const all_path  = fs.readdirSync(path)
     // 查找文件下的app.json文件
     if(all_path.some(val => val === 'app.json')) {

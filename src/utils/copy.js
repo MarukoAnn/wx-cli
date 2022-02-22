@@ -26,21 +26,5 @@ const isExistSync = (path) => {
     fs.accessSync(path)
 }
 
-// const getFileType = (src) => {
-//     return new Promise((resolve, reject) => {
-//         // 获取文件状态
-//         fs.stat(src, (err, stat) => {
-//             if(err) {
-//                 reject(err)
-//             }
-//             // 判断是文件
-//             if(stat.isFile()) {
-//                 resolve('file')
-//             }else if (stat.isDirectory()){ // 判断是文件目录
-//                 resolve('dir')
-//             }
-//         })
-//     })
-// }
 
 module.exports = copyDir

@@ -80,7 +80,6 @@ const writeConfigJsonFile = async (path, str) => {
 
 // 复制文件
 const copyTemplate =  (type, dest_path) => {
-    console.log('data', type);
     let orgin =  path.join(__dirname, '../templates', type);
     copyDir(orgin, dest_path)
 }
