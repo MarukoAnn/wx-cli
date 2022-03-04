@@ -10,7 +10,7 @@ const component = async (data) => {
      const file_path = path.join(dir_path, `${dir}/${name}`);
      let file_list = `${dir}/${name}`.split('/');
      try {
-        common.createDir(file_list, dir_path);
+        await common.createDir(file_list, dir_path);
          // 循环设置读写文件
         setTimeout(() => {
             list.forEach( async (val) => {

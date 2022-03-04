@@ -13,7 +13,7 @@ const page = async (data) => {
      try {
         readRouterFile(dir_path, name, file_path)
 
-        common.createDir(file_list, dir_path);
+        await common.createDir(file_list, dir_path);
          // 循环设置读写文件
         setTimeout(() => {
             list.forEach( async (val) => {
